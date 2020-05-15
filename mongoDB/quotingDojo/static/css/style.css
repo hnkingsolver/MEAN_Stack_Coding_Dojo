@@ -1,0 +1,29 @@
+.container h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container textarea {
+    resize: none;
+}
+
+#quote {
+    padding: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.date {
+    margin-left: 100px;
+}
+
+#skip {
+    margin-left: 190px;
+}
+
+button{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+}

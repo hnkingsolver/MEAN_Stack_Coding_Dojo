@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Mongoose Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>Racoon Name</th>
+                    <th>Racoon Age</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (var racoon in data) { %>
+                <tr>
+                    <td><%= data[racoon].name  %> </td>
+                    <td><%= data[racoon].age  %> years old </td>
+                    <td>
+                        <a href="/racoon/<%= data[racoon].id %>">View</a>
+                    </td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+        <div class="text-right">
+            <button class="btn-dark btn"><a href="/racoon/new" class="text-light">Add Racoon</a></button>
+        </div>
+    </div>
+</body>
+
+</html>
